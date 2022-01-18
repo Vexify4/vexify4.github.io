@@ -1,0 +1,170 @@
+html,body {
+    font-family: sans-serif;
+}
+
+button {
+  z-index: 100;
+}
+
+button:hover {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 5px 15px white;
+}
+
+.header {
+    border-radius: 4px;
+    border: 16px white solid;
+    padding: 15px 0;
+    font-size: 35px;
+    color: white;
+    background-color: #171717;
+}
+
+#aboutDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 20px;
+    color: white;
+    animation: change 1s 0s;
+  }
+
+#socialDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 20px;
+    color: white;
+    animation: change 1s 0s;
+  }
+
+#projectDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 20px;
+    color: white;
+    animation: change 1s 0s;
+  }
+
+  
+  .lines {
+    position:absolute;
+z-index:-1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 125%;
+    margin: auto;
+    width: 90vw;
+    background-color: #171717;
+    color: #000;
+    width: 100%;
+  }
+  
+  .line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    z-index: 1;
+  }
+  .line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    -webkit-animation: drop 7s 0s infinite;
+            animation: drop 7s 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+            
+  }
+  .line:nth-child(1) {
+    margin-left: -25%;
+  }
+  .line:nth-child(1)::after {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  .line:nth-child(3) {
+    margin-left: 25%;
+  }
+  .line:nth-child(3)::after {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  
+  @-webkit-keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+  
+  @keyframes drop {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+
+  @keyframes change {
+     0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+
+  @keyframes hover {
+    0%{opacity: .5;}
+    100%{opacity: 1;}
+  }
+
+  .about {
+    font-size: 60px;
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: white;
+    left: 50%;
+    position: relative; left: 40px;
+  }
+
+  .social {
+    font-size: 60px;
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: white;
+    z-index: 2;
+    position: absolute;
+left: 50%;
+transform: translateX(-50%);
+
+  }
+
+  .project {
+    font-size: 60px;
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: white;
+    z-index: 2;
+float: right;
+    position: relative; right: 40px;
+  }
