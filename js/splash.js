@@ -1,0 +1,13 @@
+var r_text = new Array ();
+r_text[0] = "World's worst website";
+r_text[1] = "I have no idea to code";
+r_text[2] = "Ohh cool lines";
+r_text[3] = "Hacking in progress";
+r_text[4] = "Idle for 20 hours";
+r_text[5] = "Refresh the page";
+r_text[6] = "https://www.youtube.com/channel/UCHUO3Y6tXlnH28RaB-Ajj1w";
+r_text[7] = "Downloaing your info";
+r_text[8] = "Coding anime will never exist";
+r_text[9] = "Getting your bank details";
+var i = Math.floor(9*Math.random())
+document.write('<center><h1 style="color: white; font-weight: bold; size: 50px; text-allign: center;">' + r_text[i] + '</center></h1>');

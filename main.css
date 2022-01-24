@@ -50,6 +50,10 @@ button:hover {
     animation: change 1s 0s;
   }
 
+  .splash {
+    color: white;
+  }
+
   
   .lines {
     position:absolute;
