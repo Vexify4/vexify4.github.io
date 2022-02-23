@@ -15,7 +15,6 @@ button:hover {
     border-radius: 4px;
     border: 16px white solid;
     padding: 15px 0;
-    font-size: 35px;
     color: white;
     background-color: #171717;
 }
@@ -61,7 +60,7 @@ z-index:-1;
     top: 0;
     left: 0;
     right: 0;
-    height: 125%;
+    height: 150%;
     margin: auto;
     width: 90vw;
     background-color: #171717;
@@ -149,6 +148,27 @@ z-index:-1;
     position: relative; left: 40px;
   }
 
+  .videos {
+    font-size: 60px;
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+
+  .support {
+    font-size: 60px;
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: white;
+    float: right;
+    position: relative; right: 40px;
+  }
+
   .social {
     font-size: 60px;
     border-color: white;
@@ -157,8 +177,8 @@ z-index:-1;
     color: white;
     z-index: 2;
     position: absolute;
-left: 50%;
-transform: translateX(-50%);
+left: 72%;
+transform: translateX(-72%);
 
   }
 
@@ -169,6 +189,7 @@ transform: translateX(-50%);
     border-radius: 4px;
     color: white;
     z-index: 2;
-float: right;
-    position: relative; right: 40px;
+    left: 26%;
+    transform: translateX(-26%);
+    position: absolute;
   }

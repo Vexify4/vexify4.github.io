@@ -26,3 +26,12 @@ function projectFuction() {
       x.style.display = "none";
     }
   }
+
+function videoFuction() {
+    var x = document.getElementById("videoDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }

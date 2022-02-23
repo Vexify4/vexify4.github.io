@@ -9,5 +9,11 @@ r_text[6] = "https://www.youtube.com/channel/UCHUO3Y6tXlnH28RaB-Ajj1w";
 r_text[7] = "Downloaing your info";
 r_text[8] = "Coding anime will never exist";
 r_text[9] = "Getting your bank details";
-var i = Math.floor(9*Math.random())
-document.write('<center><h1 style="color: white; font-weight: bold; size: 50px; text-allign: center;">' + r_text[i] + '</center></h1>');
+r_text[10] = "3kh0 is cool";
+r_text[11] = "I actually made this my self";
+r_text[12] = "Made from a gamer";
+r_text[13] = "HTML, CSS, JS, too many";
+r_text[14] = "Just use a website builder";
+r_text[15] = "For use with Microsoft Windows";
+var i = Math.floor(15*Math.random())
+document.getElementById('header').innerHTML += '<p style="color: white; font-weight: bold; text-allign: center;">' + r_text[i] + '</p>';
